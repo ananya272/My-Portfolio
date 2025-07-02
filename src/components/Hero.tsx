@@ -66,11 +66,6 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             }`}>
               Full Stack Developer | DSA Enthusiast | MERN Stack Developer
             </h2>
-            <p className={`text-lg md:text-xl max-w-3xl mx-auto leading-relaxed ${
-              darkMode ? 'text-gray-300' : 'text-gray-600'
-            }`}>
-              I'm a Computer Science undergraduate passionate about backend development, problem-solving, and building scalable full-stack web applications. I enjoy exploring technology through hands-on projects and am eager to contribute, grow, and make an impact in the tech world.
-            </p>
           </motion.div>
 
           <motion.div

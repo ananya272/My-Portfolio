@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -87,13 +88,13 @@ function App() {
         darkMode ? 'bg-slate-900' : 'bg-white'
       }`}>
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        
+        <Hero darkMode={darkMode} />
+        <About darkMode={darkMode} />
         <motion.main
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Hero darkMode={darkMode} />
           <Education darkMode={darkMode} />
           <Projects darkMode={darkMode} />
           <Skills darkMode={darkMode} />
